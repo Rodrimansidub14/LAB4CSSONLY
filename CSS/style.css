@@ -1,0 +1,78 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background: #ffff;
+    /* Fondo negro como la imagen de referencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene {
+    position: relative;
+    width: 5000px;
+    /* Ajustar según el tamaño deseado */
+    height: 5000px;
+    /* Ajustar según el tamaño deseado */
+    background-color:#1b263b;
+}
+
+.head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 520px;
+    background-color: #0e0024;
+    border-radius: 59%/60%;
+    outline: 5px solid rgba(0, 187, 255, 0.693);
+    outline-offset: -5px;
+    margin: auto;
+    /* Centra la cabeza horizontalmente si es necesario */
+}
+
+.eye {
+    position: absolute;
+    width: 135px;
+    /* Adjust to the size of your desired eye */
+    height: 135px;
+    /* Adjust to the size of your desired eye */
+    background-color: white;
+    border-radius: 55%;
+
+
+
+    /* Additional styling for eyes */
+}
+
+#left-eye {
+    top: 150px;
+    /* Adjust for the correct positioning */
+    left: 25px;
+    /* Adjust for the correct positioning */
+    clip-path: path('M1,30 Q50,65 250,24 Q0,295 0,55 Z');
+    transform: translateX(3%) rotate(45deg);
+
+
+}
+
+#right-eye {
+    top: 150px;
+    /* Adjust for the correct positioning */
+    right: 35px;
+    clip-path: path('M1,30 Q50,75 250,35 Q0,295 0,55 Z');
+    transform: translateX(3%) rotate(-50deg);
+
+}
+
+.body {
+    position: relative;
+    bottom: 10%;
+    width: 100%;
+    height: 40%;
+    background: #000;
+    /* Fondo negro para el cuerpo */
+    /* Añadir estilos específicos para formar el cuerpo */
+}
